@@ -10,14 +10,14 @@ class Application(tk.Frame):
         # geometryについて : https://kuroro.blog/python/rozH3S2CYE0a0nB3s2QL/
         self.master.geometry("300x200")
 
-        # label Widgetを作成する。
+        # Windowを親要素として、label Widgetを作成する。
         # text : テキスト情報
         # width : 幅の設定
         # height : 高さの設定
         # bg : 背景色の設定
-        # 色の設定を変更する場合 : http://www.tcl.tk/man/tcl/TkCmd/colors.htm
+        # 色について : https://kuroro.blog/python/YcZ6Yh4PswqUzaQXwnG2/
         # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
-        label = tk.Label(text="testtest", width=30, height=15, bg="red")
+        label = tk.Label(self.master, text="testtest", width=30, height=15, bg="red")
 
         # Windowを親要素とした場合に、label Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
